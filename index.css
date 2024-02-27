@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+  
+:root {
+    /* Primary Colors */
+    --moderate-blue: hsl(238, 40%, 52%);
+    --soft-red: hsl(358, 79%, 66%);
+    --light-grayish-blue: hsl(239, 57%, 85%);
+    --pale-red: hsl(357, 100%, 86%);
+  
+    /* Neutral Colors */
+    --dark-blue: hsl(212, 24%, 26%);
+    --grayish-blue: hsl(211, 10%, 45%);
+    --light-gray: hsl(223, 19%, 93%);
+    --very-light-gray: hsl(228, 33%, 97%);
+    --white: hsl(0, 0%, 100%);
+  
+    /* Typography */
+    --font-family: 'Rubik', sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  
+    /* Body Copy */
+    --body-font-size: 16px;
+  }
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-light-gray);
+}
+
+#comments {
+  background-color: var(--very-light-gray);
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-wrapper {
+  margin: .5rem 1rem;
+  background-color: var(--white);
+  border-radius: .5rem;
+}
+
+.reply-wrapper {
+  margin: 0 0 .5rem 1rem;
+  background-color: var(--white);
+  border-radius: .5rem;
+}
+
+.reply-comment {
+  margin: 0 1rem;
+  border-left: 2px solid var(--light-gray);
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+}
+
+.comment-header img {
+  height: 30px;
+  width: 30px;
+  margin: 0.5rem .75rem;
+}
+
+.username{
+  color: var(--moderate-blue);
+  font-weight: var(--font-weight-medium);
+  margin-right: .75rem;
+}
+
+.you {
+  color: var(--white);
+  background-color: var(--moderate-blue);
+  padding: 0 .25rem;
+  border-radius: 3px;
+  margin-right: .75rem;
+}
+
+.timeframe {
+  color: var(--grayish-blue);
+}
+
+.content {
+  margin: 0 1rem;
+  color: var(--grayish-blue);
+}
+
+.comment-footer {
+  margin: 0 1rem;
+  padding: .5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--very-light-gray);
+  padding: .25rem;
+  border-radius: .25rem;
+}
+
+.left-footer > svg {
+  margin: 0 .25rem;
+}
+
+.left-footer > svg:hover {
+  color: var(--moderate-blue);
+}
+
+.left-footer .score {
+  color: var(--moderate-blue);
+  color: var(--moderate-blue);
+  font-weight: var(--font-weight-medium);
+}
+
+.right-footer {
+  display: flex;
+  align-items: center;
+}
+
+.reply-text, 
+.edit-text, 
+.delete-text {
+  margin:0 .25rem;
+}
+
+.reply-text,
+.edit-text {
+  color: var(--moderate-blue);
+  font-weight: var(--font-weight-bold);
+  margin-right: .75rem;
+}
+
+.delete-text {
+  color: var(--soft-red);
+  font-weight: var(--font-weight-bold);
+}
+
+#create-comment {
+  margin: 0 1rem;
+  background-color: var(--white);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  margin: 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: .2rem;
+  height: 100px;
+  padding: 1rem;
+  resize: none;
+  color: var(--grayish-blue);
+}
+
+#message::placeholder{
+  font-family: var(--font-family);
+  color: var(--grayish-blue);
+}
+
+#message:focus {
+  outline: 1px solid var(--light-gray);
+  border: none;
+}
+
+#user-send-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem .5rem 1rem;
+}
+
+#user-send-section img {
+  height: 30px;
+  width: 30px;
+}
+
+
+#send, .send {
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--moderate-blue);
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+.reply-section {
+  background-color: var(--white);
+  margin: 0 1rem 0.5rem 2rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.reply-section > img {
+  height: 30px;
+  width: 30px;
+  margin: 0 .5rem;
+}
+
+.reply-section > .message {
+  height: 70px;
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: .25rem;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.reply-section > .send {
+  margin-right: .5rem;
+}
+
+.reply-to{
+  color: var(--moderate-blue);
+  font-weight: var(--font-weight-bold);
+}
+
+
+
+  
